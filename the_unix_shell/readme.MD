@@ -1,19 +1,35 @@
-
+```
 Notes
-- https://www.theodinproject.com/lessons/foundations-command-line-basics 
+https://www.theodinproject.com/lessons/foundations-command-line-basics 
+    Assignments
+    https://www.theodinproject.com/lessons/foundations-command-line-basics#assignment
+        2 With your newly discovered CLI super powers, practice creating a folder and a few files using the mkdir, touch, and cd commands introduced in the previous step. As an example, a basic website might have a main index.html file, a CSS stylesheet file called style.css, and a folder for images. Think about how you could create these files with the commands and put it into practice!
 
-    The Unix Shell course/Sections
-        Download files
-        Introducing the Shell
-        Navigating Files and Directories
-        Working With Files and Directories
-        Pipes and Filters
-    
+        1
+            The Unix Shell course/Sections
+                Download files
+                Introducing the Shell
+                Navigating Files and Directories
+                Working With Files and Directories
+                Pipes and Filters 
+            finished 2/14
     Notes
         ~
             'the current user's home directory
         ..
             'the directory containing this one'
+        |
+            pass data to another command
+                sort -n lengths.txt | head -n 1
+                    sorts lengths.txt numerically, then passes the output to head -n 1 (which gets/outputs the first line (-n 1) of file)
+            more fun
+                wc -l *.pdb | sort -n | head -n 1
+        &&
+            run multiple commands
+                git add . && git commit -m 'wowzers' && git push       
+        >
+            send output to file
+                wc -1 *.pdb > lengths.txt
         cat details.txt
             displays contents of file to the screen
         cd
@@ -30,14 +46,21 @@ Notes
             copies file to subdir and renames it
         cp creatures/minotaur.dat creatures/unicorn.dat backup/
             (multiple file args, destination as last arg)
+        cut
+            cut -d , -f 2 animals.csv
+                -d ,
+                    specifies 'comma delimiter'  (default is tab delimiter)
+                -f 2
+                    pic the second column of each row
         echo hello > file_01.txt
             replaces contents of file with the word 'hello'
         echo hello >> file_01.txt
             adds 'hello' on a new line at the end of the contents of file file_01.txt
         head -n 3 animals.csv > animals-subset.csv
             adds the first three lines of the former file into new lines in the latter file 
-        tail -n 2 animals.csv >> animals-subset.csv
-            adds the last two lines of the former file into new lines in the latter file 
+            also 
+            tail -n 2 animals.csv >> animals-subset.csv
+                adds the last two lines of the former file into new lines in the latter file 
         ls 
             list dir contents
             ls --help for more info, or
@@ -92,16 +115,22 @@ Notes
             deletes the file
         rm -r dir_name
             deletes files in directory dir_name, then deletes the directory
-        sort -n numbers.txt
-            outputs numerical sorting of the lines of file numbers.txt  
-        sort -n numbers.txt > sorted_numbers.txt
-            writes numerical sorting of the lines of file numbers.txt to file sorted_numbers.txt
+        sort
+            sort -n numbers.txt
+                outputs numerical sorting of the lines of file numbers.txt  
+            sort -n numbers.txt > sorted_numbers.txt
+                writes numerical sorting of the lines of file numbers.txt to file sorted_numbers.txt
+            cut -d , -f 2 animals.csv | sort | uniq
+                sorts the output of animals.csv
         tail
             see 'head'
         touch newfile.txt
             creates a new file if it doesn't exist (then opens in nano)
             or if file exists, opens it in nano
             navigation
+        uniq
+            cut -d , -f 2 animals.csv | sort | uniq
+                only displays unique output        
         wc filename.txt
             returns a count of lines, words and characters found in filename.txt
         wc *.txt
@@ -114,3 +143,4 @@ Notes
             returns character count for all .txt files in current dir
         wc -l *.txt > details.txt
             writes command output to file details.txt
+```
