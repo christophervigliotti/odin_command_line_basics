@@ -1,4 +1,3 @@
-```
 Notes
 https://www.theodinproject.com/lessons/foundations-command-line-basics 
     Assignments
@@ -143,4 +142,3 @@ https://www.theodinproject.com/lessons/foundations-command-line-basics
             returns character count for all .txt files in current dir
         wc -l *.txt > details.txt
             writes command output to file details.txt
-```
