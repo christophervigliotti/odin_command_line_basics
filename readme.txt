@@ -12,14 +12,24 @@ https://www.theodinproject.com/lessons/foundations-command-line-basics
                     enter 'iterm',
                     hit [enter]
         How can you navigate to a particular directory?
+            cd 
         Where will cd on its own navigate you to?
+            to the root dir
         Where will cd .. navigate you to?
+            up one level
         How do you display the name of the directory you are currently in?
+            cd .
         How do you display the contents of the directory you are currently in?
+            ls
         How do you create a new directory?
+            mkdir dirname
         How do you create a new file?
+            touch filename.ext
         How do you destroy a directory or file?
+            rm filename.ext
         How do you rename a directory or file?
+            mv filename.ext filename.txt
+
     Assignments
     https://www.theodinproject.com/lessons/foundations-command-line-basics#assignment
         2 
