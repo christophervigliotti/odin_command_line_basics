@@ -2,7 +2,14 @@ Notes
 https://www.theodinproject.com/lessons/foundations-command-line-basics 
     Assignments
     https://www.theodinproject.com/lessons/foundations-command-line-basics#assignment
-        2 With your newly discovered CLI super powers, practice creating a folder and a few files using the mkdir, touch, and cd commands introduced in the previous step. As an example, a basic website might have a main index.html file, a CSS stylesheet file called style.css, and a folder for images. Think about how you could create these files with the commands and put it into practice!
+        2 
+            With your newly discovered CLI super powers, practice creating a folder and 
+            a few files using the mkdir, touch, and cd commands introduced in the previous 
+            step. As an example, a basic website might have a main index.html file, 
+            a CSS stylesheet file called style.css, and a folder for images. 
+            
+            Think about how you could create these files with the commands and 
+            put it into practice!
 
         1
             The Unix Shell course/Sections
