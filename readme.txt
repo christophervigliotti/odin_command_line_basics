@@ -1,5 +1,25 @@
 Notes
 https://www.theodinproject.com/lessons/foundations-command-line-basics 
+
+    Knowledge Check
+        What is the command line?
+            it's the matrix...a way to interface with the OS outside of GUI-land
+        How do you open the command line on your computer?
+            via Visual Studio Code
+            or opening Terminal on the Mac 
+                via 
+                    [ctrl]+[space],
+                    enter 'iterm',
+                    hit [enter]
+        How can you navigate to a particular directory?
+        Where will cd on its own navigate you to?
+        Where will cd .. navigate you to?
+        How do you display the name of the directory you are currently in?
+        How do you display the contents of the directory you are currently in?
+        How do you create a new directory?
+        How do you create a new file?
+        How do you destroy a directory or file?
+        How do you rename a directory or file?
     Assignments
     https://www.theodinproject.com/lessons/foundations-command-line-basics#assignment
         2 
@@ -20,6 +40,8 @@ https://www.theodinproject.com/lessons/foundations-command-line-basics
                 Pipes and Filters 
             finished 2/14
     Notes
+        [tab]
+            tab completion is a thing 
         ~
             'the current user's home directory
         ..
